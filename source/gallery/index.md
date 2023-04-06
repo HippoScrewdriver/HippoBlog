@@ -1,7 +1,7 @@
 ---
 title: gallery-施工中，现在还很离谱
 date: 2023-03-22 19:48:54
-type: 
+type: gallery
 ---
 
 <style>
