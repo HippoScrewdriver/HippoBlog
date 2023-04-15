@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>荷马和螺丝刀的个人站-使用说明</title>
+    <url>/public/2023/04/05/top/</url>
+    <content><![CDATA[<p>嗨！这里是荷马和螺丝刀的个人博客，左侧为导航栏，整体正在施工中。  </p>
+<blockquote>
+<p>除此之外，Archives包括了所有分类与未分类的文章；如果只是随意浏览，Tags则更为细致具体；Links是我的友链，如想加入请邮件联系；Search可以搜索整个站点的信息。<br>联系我请发送<strong>邮件</strong>: <a href="mailto:&#x68;&#x69;&#x70;&#x70;&#111;&#115;&#x63;&#114;&#101;&#x77;&#x64;&#x72;&#105;&#x76;&#101;&#x72;&#115;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#x68;&#x69;&#x70;&#x70;&#111;&#115;&#x63;&#114;&#101;&#x77;&#x64;&#x72;&#105;&#x76;&#101;&#x72;&#115;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a></p>
+</blockquote>
+<h3 id="功能分区及主要目录："><a href="#功能分区及主要目录：" class="headerlink" title="功能分区及主要目录："></a>功能分区及主要目录：</h3><ol>
+<li><p><a href="https://hipposcrewdriver.com/public/categories/life">生活杂记 - Life</a></p>
+<p> 阅读札记，随手记，生活琐事，兴趣爱好等。部分文章上锁，<a href="mailto:hipposcrewdrivers@gmail.com">邮件</a>联系我获取密码，也欢迎交流讨论。</p>
+</li>
+<li><p><a href="https://hipposcrewdriver.com/public/categories/tech">技术学习 - Tech</a></p>
+<p> 与其说是技术文章，不如说是技术小白的学习经历。bug很多，欢迎指正。</p>
+</li>
+<li><p><a href="https://hipposcrewdriver.com/public/categories/tolkien">托尔金相关 - Tolkien</a></p>
+<p> 托尔金相关的产出都会放在这里。</p>
+</li>
+<li><p><a href="https://hipposcrewdriver.com/public/gallery">画廊 - Gallery (施工中)</a></p>
+<p> 我在寻找瀑布流照片墙的实现方法无果后，决定动手自己写一个，奈何目前经验不足仍在施工中。现在的页面比较离谱，如果哪位大佬能够提出改善建议，欢迎邮件或留言联系我。</p>
+</li>
+</ol>
+<h3 id="本站信息："><a href="#本站信息：" class="headerlink" title="本站信息："></a>本站信息：</h3><ul>
+<li>本站架设在Bluehost虚拟主机上，目前运行还算稳定，可以推荐。</li>
+<li>关于我的网站域名后带public这一问题，主要原因是目前能找到的hexo deploy插件在尝试后都无法完整拷贝文件，因此一直在手动部署，public文件夹比较方便在FileZilla一键上传…(以后会写脚本部署的，画个饼）</li>
+<li>本站使用Hexo静态站点生成框架，以及非常热门的nexT主题，后续对于主题进行了一些更新美化。</li>
+<li>评论系统使用Valine，目前还没办法保证实时推送评论，因此推荐邮件沟通。</li>
+</ul>
+<h3 id="未来期许："><a href="#未来期许：" class="headerlink" title="未来期许："></a>未来期许：</h3><p>本站于2023.03.20开始筹划建设，希望能够在三年后依然保持更新(至少和我租的主机一样久吧！后续将不断发展完善页面，丰富内容，希望能坚持下去:)</p>
+<blockquote>
+<p>想知道更多关于我的信息，请查看<a href="https://hipposcrewdriver.com/public/about/">About Me</a>页面。</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>关于我</tag>
+        <tag>about</tag>
+        <tag>概览</tag>
+        <tag>导航栏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从零开始用Hexo建站的历程</title>
+    <url>/public/2023/03/22/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%94%A8Hexo%E5%BB%BA%E7%AB%99%E7%9A%84%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="我是如何开始的❗️❓"><a href="#我是如何开始的❗️❓" class="headerlink" title="我是如何开始的❗️❓"></a>我是如何开始的❗️❓</h2><p>关于个人博客，不同于其他社交媒体，我一直很想创建一个既能让我尝试摸索前端开发，又可以浓缩生活的个人空间。于是在winter quarter结束后，我开始慢慢试图寻找资料，当然我目前的水平还不足以直接用前端框架直接搭建，因此所有内容都很基础。</p>
+<p>于是我从一篇知乎文章<a href="https://www.zhihu.com/question/22197688">“如何自己搭建一个个人网站”</a>开始入手。本文采用<strong>Hexo</strong>博客框架（当然也是一个捷径啦，在基本熟悉网站结构后我会继续研究Hexo的具体原理），部署在<strong>github</strong>上，<del>采用<strong>MiHoYo</strong>的主题框架（有点二次元但很简洁！），并且使用无后端的<strong>Valine</strong>（在考虑换成包含后端的Waline）作为评论系统。</del><br>现在改成了nexT主题，因为这个主题更加成熟也有更多拓展空间。</p>
+<p>这篇文章的内容大部分来源于大佬的介绍，我只是根据自己的建站历程进行整理。中间有些部分和原文章不完全一样，是因为我在过程中遇到了更多问题   ，这些解决办法将包含在文章中。</p>
+<hr>
+<h2 id="创建git仓库，配置，和安装："><a href="#创建git仓库，配置，和安装：" class="headerlink" title="创建git仓库，配置，和安装："></a>创建git仓库，配置，和安装：</h2><ol>
+<li><p>首先！创建你的github仓库，这个仓库就是储存你网站信息的。仓库名称需为固定写法：<strong>username.github.io</strong></p>
+</li>
+<li><p>在git安装运行正常的基础上进行配置，我使用的是mac，因此在terminal设置git的配置信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;github的username&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;github的注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置成功后，我们需要通过以下命令生成ssh key文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1ssh-keygen -t rsa -C <span class="string">&quot;github的注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+<p>在这里可以先不设置密码，直接回车。<br>完成后我们会在隐藏文件夹<code>.ssh</code>中找到两个文件：<code>id_rsa</code>和<code>id_rsa.pub</code>，复制<code>id_rsa.pub</code>文件里的所有内容，然后将你复制的key粘贴到github中。</p>
+<p>在我正在使用的github页面中，ssh key粘贴的位置如下：</p>
+<ul>
+<li>选择Settings</li>
+<li>左侧边栏SSH and GPG keys</li>
+<li>然后添加你的SSH keys，命名并且记得增加权限。</li>
+</ul>
+</li>
+<li><p>等我在另一台设备上重新设置再继续写，现在因为已经设置过了，操作的结果和最初不一样。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2023-04-13-testwordcount</title>
+    <url>/public/2023/04/13/2023-04-13-testwordcount/</url>
+    <content><![CDATA[<p>这里有点问题测试一下</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>这个分类可以写点东西了</title>
+    <url>/public/2023/04/13/2023-04-13-tolkiennnn/</url>
+    <content><![CDATA[<h2 id="最常用的还是tech和life页面，以至于钻这里空空如也"><a href="#最常用的还是tech和life页面，以至于钻这里空空如也" class="headerlink" title="最常用的还是tech和life页面，以至于钻这里空空如也"></a>最常用的还是tech和life页面，以至于钻这里空空如也</h2><p>今年八月份大概会有一场线下活动，暂时还不知道可以做点什么。往年几次都在吃老本做那个写得不怎么样的手写，再做一样的多少有点离谱了。实在没什么技能，不会画画也不会写文，实在不行印点卡片。</p>
+]]></content>
+      <categories>
+        <category>tolkien</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>字数统计的大bug</title>
+    <url>/public/2023/04/13/2023-04-13-wordcountissue/</url>
+    <content><![CDATA[<h2 id="关于我这几天一直在纠结的字数统计问题"><a href="#关于我这几天一直在纠结的字数统计问题" class="headerlink" title="关于我这几天一直在纠结的字数统计问题"></a>关于我这几天一直在纠结的字数统计问题</h2><p>在我前几天写的帖子里面，不乏创建字数统计功能的文字，但我一直以为没有成功过，甚至找遍了网上各种方案，在localhost预览时都无法显示。<br>然而今天上课偶然部署了一下，发现部署后在新浏览器里打开是有字数统计的。<br>然后我才发现localhost也有浏览器缓存。（没错我对前端一无所知）<br>浏览器缓存这个问题我在最开始发现localhost能够显示更新内容而部署后却不显示时，就已经发现了。但那个时候由于看到localhost一直显示正常，就理所当然地以为只有部署后才会出现这种问题。</p>
+<pre><code>是吧问题就是在于我根本没有去弄懂浏览器缓存是什么  
+还是对于基础的概念不了解
+</code></pre>
+<p>于是就出现了今天这个问题，让我一直坚信localhost不显示就是没成功。<br>还是很偶然，也幸好发现了，不然后续又要浪费很多时间去做字数统计。</p>
+]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>明天去看魔戒重映</title>
+    <url>/public/2023/04/12/2023-04-12-daily/</url>
+    <content><![CDATA[<h2 id="除了马拉松，还没有真的在影院看过正是额魔戒电影"><a href="#除了马拉松，还没有真的在影院看过正是额魔戒电影" class="headerlink" title="除了马拉松，还没有真的在影院看过正是额魔戒电影"></a>除了马拉松，还没有真的在影院看过正是额魔戒电影</h2>]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>shell scripts的基本用法</title>
+    <url>/public/2023/04/10/2023-04-10-cse374shellscriptnotes/</url>
+    <content><![CDATA[<h1 id="这里是我的cse374笔记"><a href="#这里是我的cse374笔记" class="headerlink" title="这里是我的cse374笔记"></a>这里是我的cse374笔记</h1><p>4.10的时候写完了作业，这几天有空的时候可以整理一下具体的内容做个复习。</p>
+]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生活日志</title>
+    <url>/public/2023/04/10/2023-04-10-daily/</url>
+    <content><![CDATA[<h2 id="今天好冷"><a href="#今天好冷" class="headerlink" title="今天好冷"></a>今天好冷</h2><p>春季忽冷忽热外加随时而来的雨，几乎是只有出门的那一刹那才能决定是否要上楼添减衣服。</p>
+<h3 id="关于树莓派"><a href="#关于树莓派" class="headerlink" title="关于树莓派"></a>关于树莓派</h3><p>这几天我简单搜了一下，4B的性能已经可以抵一台基础的电脑了。不过价格炒得有点贵，真要买的话估计预算要二百刀，鉴于上个月我才买了三年的host已经花掉二百，我也在考虑3B+。</p>
+<h3 id="关于我的房子"><a href="#关于我的房子" class="headerlink" title="关于我的房子"></a>关于我的房子</h3><p>暑期租是租不出去了，中间还有lease的间隔十来天要交九百多刀的daily，嗯即使我不在。</p>
+<p>我可以把我的房间当成机房放服务器吗。<br>顺便蹭个学校的网和电。</p>
+<h3 id="再"><a href="#再" class="headerlink" title="再"></a>再</h3><p>其实我蛮好奇busuanzi的浏览量都是哪里来的，毕竟我这个站从来没公开过。</p>
+<h3 id="再再"><a href="#再再" class="headerlink" title="再再"></a>再再</h3><p>今天要不加一下字数统计吧<br>ps: 全站字数统计一直失败，NexT主题其实是有字数统计的但是每次加插件的时候都会出现问题。最近事情稍微有点多，暂时先放一放。</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>日志</title>
+    <url>/public/2023/04/08/2023-04-08-daily/</url>
+    <content><![CDATA[<h2 id="最近越来越懒得做饭了"><a href="#最近越来越懒得做饭了" class="headerlink" title="最近越来越懒得做饭了"></a>最近越来越懒得做饭了</h2><p>自从上周六之后，去target买了一包贝果一盒cream cheese，发现顶饿的确快速有用。于是又买了，也因此变得越来越懒得做饭了。买菜几天不吃就烂得很快，每天去超市又不现实。</p>
+<p>省下来了不少时间，删掉了几个社交软件，专心看书。</p>
+<p>已经忘记是我初中还是高中的时候，在凤凰汇买了一本《普京传》。对我来说不是什么闻名而来的书，甚至我也不知道这是不是什么奇怪的野史类传记，总之是买了，我对苏联和普京一直都一种执念。买回来当天看了一点，后来就再也没有机会看了，应该是初中吧，那个时候是没有自己的时间的。</p>
+<p>这两天捡起来看，还是很喜欢，觉得自己没有选错。又看到了燕子一段，于是搜了《红雀》去看，并没有觉得拍得很好，感情线太奇怪了，苏联时期的事情搞得很美帝主义。</p>
+<h3 id="关于hippo-blog"><a href="#关于hippo-blog" class="headerlink" title="关于hippo blog"></a>关于hippo blog</h3><p>说来也好久没有增加新的内容了，最近想做的事情有点杂，不好同时进行，会容易烂尾。</p>
+<h3 id="关于我的选课"><a href="#关于我的选课" class="headerlink" title="关于我的选课"></a>关于我的选课</h3><p>就像我曾经说我的engl多半会寄一样，再次尝试还是让我认清了写模版essay对我来说是一件痛苦的事情。至少我可以承认我上的别的课都有在好好上，这一门我无法保证。</p>
+<h3 id="再"><a href="#再" class="headerlink" title="再"></a>再</h3><p>今天开始恢复听音乐了。</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+        <tag>随手记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2023-04-07-bookforlinux</title>
+    <url>/public/2023/04/07/2023-04-07-bookforlinux/</url>
+    <content><![CDATA[<h2 id="关于linux的书"><a href="#关于linux的书" class="headerlink" title="关于linux的书"></a>关于linux的书</h2><pre><code>&gt; 这两天翻书，又恰好正在学shell的课程，找到一本《linux系统命令及shell的脚本实践指南》，第一次认真看了一遍linux系统的历史。果然越在物质不丰富的年代人的创造力也就越强，比如买鼠标之前要学会给硬件写驱动此类我至今都完全没有头绪的东西。于是很想从头开始学习系统，也觉得redhat很有意思，过段时间买一个树莓派试试。
+</code></pre>
+<p>还是不怎么舍得动我的旧电脑，虽然东西已经都迁移到现在的电脑上了，但多多少少还是有点担心陪我三年的air被我折腾寄了。大概就是这样。</p>
+<p>ps:<br>我很好奇，用中文写博客的时候大家是不是都会遇到切换很麻烦的时候。cap键其实用起来很顺手但偶尔失效，因此不是一直都顺畅。尤其是代码和中文混着写的时候，太痛苦了，希望以后能找到解决方案。<br>虽然确实用英文写不会有这个问题。</p>
+]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>password needed</title>
+    <url>/public/2023/04/06/2023-04-06-somethingaboutme/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="8cb2f75f9a95a964698bbd9f9b81e526acbe92719ead9486a687730415c698fd">0bdfa3b379a03edfc2bc4032a97a751e6f206417398ecda972bc005a3d0d574f8074f10e1eb92c644885a72bd0fad800868ccb277efa250c0878173587bbfc1f523c4aa374c5a667576c6ed172b31772c81d6774320cca972432e1c9fc60b1cb93437e961948df2f241a29d79ec77ee2abb33882bec491e12214618637435b8ef0fdba71a2261c03ce729f012bfd882434e97b830f8bc5ba3186029a83cbc160b2e29d8575f9119b5c3964fd8cc39b0ab9388d19bd23a65cfc75f2446c1f551e473a1669f63acd4fcf812434e2f5d1351a6f4309b339cd40b778f421cbdd8df49fafb4bbc6053e6ae3bb4ba191dc3c2c70c10dac2ac81870a163787507f363ddf53029f5b6af379e645552422255f8253966e28b0508651d68be3af65b2b4d94effd414f1019906b6d46e4660f641e08a837fe749fcbbf89837523be0f26b70adaa9bc348e0bcdabf6fa3af933381616c0ff36b50dc28f71211df0676902bd751ffbab5d822ad7bc9afdd00aa64d75e0974bce2779657f0d288dcd6a984abc0ef567171d2981a0649bc5b9a59a51cd9df0579f4298816101fe5bb7563888de158676921bcb0fc0314b725ae58bc11ecc6ce76c9883196dda727e61e5449c33eccef4e8c15e14aae514e6e9e7b87ed29643a7db221741f46b8215fb69d28668e5e1ed5b118ffb508c50f1ac9a0ce17d864e38cbac76915d7a64616159788d3f283c7eae93a85312bc0410e0521b9ca81ceb1e5a1921d96eadeb978f3b3935be853c0b6e3b09288192ae37c4620957350b4e4f46be627bdb2b78a69a888b91f19fcdc5b18c25bb8cf0e1e5efb76924675eae8a49034bda22a6791d28b8309eaa18f12cc4651b926b1026b90b3e395e3cc14704e5746f3eab855bb28df0926cb09f42360311960b6b4a5cdcfeb1278407e16e3e2d782cc27aef4952c3bae87d13f8645a887799eeff55b176015bd8fec7847f52af1cc9f763f9c8917c68739f475c044c86410ae7f7e965bf779c3d840518525a2ff8f0971970816007b252785910e5a9c914654aadccc00619be83bf35398bb4300f44493f829a4af6c3b465444f06145089f9e2b33e8b43788460a6e68693500b61278e4d1016ac3df9f6a707b5bbd7e7187aac7b2154c5bb7a2a4204c8fe7e6a568751fb18e6ec6c992335f4687d0819163fa01cbe9b9b4d1dd112ae690d06cf1a52e4137dabbc2658937a838422c96d2a0dd8201643f81369819df1c4d5495aa26691b16efd1b1d11f5f21950f953524ec4296538e2d1ea14b85976ca4d8d9b2ae848f3d06c69939a55ffe414ff9e4862197ea1bdea397a6090975597c6ca09047cd64fe9f1fb106e5756bd6c6c8c38d8c7d476a371ec26b9a489fb8e5857a69fd0fe13067017203f7a373f23a7bb22cd40323bf28e3ae5953601d0db8eec2649aabee204e4313be1240f3cb9b069a5a9e5494dfd1899f93da3150966a2eaf3d60063da6ffade7cdc2f92f6c6b4b39cd64e18e308eaea1ab3190ab5964220fcd8aa95d47c101b292141271903bdb5b6cb803cee0d3145c3925e67f8810d3a1c7c5f0b033d809c9bf4690553c64091fccac766bacafeefc0cd8638f0acb2befd9af7066ec8dce885f0ad28f98733e8a80bbe32d6f6e1b72dc14b472a226ea3d80319cf583ec31a9a3e4d1d6ef738a696b72330431e4fd7ac92e069a1c2f22ef32076e3c451d916a82628731dc72a72e75659d1cfaa9d0dc80e950e54b0c088535b2d29e639229c8890ffc0b047f5092ab80e1bfd1b315ae193f01001a53e716b1287192ecd68beb34dd321096cee9f9c88bcc5cee329ddb6c4a16e3167b43784848dc6a546547869b6151f3fb00574aeb5fbeb9d91b36aab21770c8917b9b41cc454f2ef01f8a41fcd0ce614663788eb60eabf75602733bfaf8e10ea9f96975e17677ee077024b4b22fc41693c9a502c0b4c17ba5f4cf9daf3c15fcc2e76244deb17844ca5030d1e00ab73d828a5786870efafd3eb4c761ae067b42236b31295e08c9b5847061fe9b5dda5682d3784f9d6b2ca14547dd79a4c9529dfd6</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">联系站长获取密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/public/lib/hbe.js"></script><link href="/public/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《一只特立独行的猪》笔记</title>
+    <url>/public/2023/04/06/2023-04-06-yizhiteliduxingdezhu/</url>
+    <content><![CDATA[<h2 id="来自微信读书的快速粘贴笔记📒"><a href="#来自微信读书的快速粘贴笔记📒" class="headerlink" title="来自微信读书的快速粘贴笔记📒"></a>来自微信读书的快速粘贴笔记📒</h2><p>一只特立独行的猪<br>王小波<br>34个笔记</p>
+<p>◆ 积极的结论</p>
+<blockquote>
+<blockquote>
+<p>这当然也是个很特别的时期。消极地回顾自己的经历是不对的，悲观、颓废、怀疑都是不对的。但我做的事不是这样，我正在从这些事件中寻找积极的结论，这就完全不一样了。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>凡不可信的东西就不信</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>但这一点有时候不容易做到，因为会导致悲观和消极，从理性和乐观两样东西里选择理性颇不容易。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>我认为，一个人快乐或悲伤，只要不是装出来的，就必有其道理。你可以去分享他的快乐，同情他的悲伤，却不可以命令他怎样怎样，因为这是违背人类的天性的。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>恐怕主要的原因是我怕别人知道这些卑鄙的心事，把它们隐藏得很深，故而没人知道</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>还有第三种东西，就是“善”。善是非常好的（从理论上说，没有比它更好的东西），我自己年轻时就是这样，我遇到了一个奇妙的新世界。</p>
+</blockquote>
+</blockquote>
+<p>◆ 一只特立独行的猪</p>
+<blockquote>
+<blockquote>
+<p>我已经四十岁了，除了这只猪，还没见过谁敢于如此无视对生活的设置。相反，我倒见过很多想要设置别人生活的人，还有对被设置的生活安之若素的人。因为这个缘故，我一直怀念这只特立独行的猪。</p>
+</blockquote>
+</blockquote>
+<p>◆ 苏东坡与东坡肉</p>
+<blockquote>
+<blockquote>
+<p>所以，真正有出息的人是对名人感兴趣的东西感兴趣，并且在那上面做出成就，而不是仅仅对名人感兴趣。</p>
+</blockquote>
+</blockquote>
+<p>◆ 有关“伟大一族”</p>
+<blockquote>
+<blockquote>
+<p>刚回中国时，我带过的那些学生起码有一半属伟大一族，因为他们眼睛里闪烁着梦想的光芒。</p>
+</blockquote>
+</blockquote>
+<p>◆ 有关“给点气氛”</p>
+<blockquote>
+<blockquote>
+<p>作为一个喜欢有趣的人，我当然不会放弃阅读这种获得有趣的机会。结果就发现，作家里有些人拥护有趣，还有些人是反对有趣的。马克·吐温是和我一头的，或者还有萧伯纳——但我没什么把握。我最有把握的是哲学家罗素先生，他肯定是个赞成有趣的人。摩尔爵士设想了一个乌托邦，企图给人们营造一种最美好的生活方式，为此他对人应该怎样生活做了极详尽的规定</p>
+</blockquote>
+</blockquote>
+<p>◆ 科学的美好</p>
+<blockquote>
+<blockquote>
+<p>我现在既不是化学家，也不是数学家，更不是物理学家。我靠写文章为生，与科技绝缘——只是有时弄弄计算机。这个行当我会的不少，从最低等的汇编语言到最新潮的C++全会写，硬件知识也有一些。但从我自己的利益来看，我还不如一点都不会，省得整夜不睡，鼓捣我的电脑，删东加西，最后把整个系统弄垮，手头又没有软件备份。于是，在凌晨五点钟，我在朋友家门前踱来</p>
+</blockquote>
+</blockquote>
+<p>表演失魂落魄，虽然是比喻，若是真的代入失恋的情景，也并非没有道理</p>
+<blockquote>
+<blockquote>
+<p>踱去，抽着烟。早起的清洁工都以为我失恋了，这门里住着我失去的恋人，我在表演失魂落魄给她看。其实不是的，电脑死掉了，我什么都干不了，更睡不着觉。好容易等到天大亮了，我就冲进去，向他借软件来恢复系统。——瞎扯了这么多，现在言归正传，我要说的是：我和科学没有缘分，但是我爱科学，甚至比真正的科学家还要爱得多些。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>踱去，抽着烟。早起的清洁工都以为我失恋了，这门里住着我失去的恋人，我在表演失魂落魄给她看。其实不是的，电脑死掉了，我什么都干不了，更睡不着觉。好容易等到天大亮了，我就冲进去，向他借软件来恢复系统。——瞎扯了这么多，现在言归正传，我要说的是：我和科学没有缘分，但是我爱科学，甚至比真正的科学家还要爱得多些。</p>
+</blockquote>
+</blockquote>
+<p>◆ 关于幽闭型小说</p>
+<blockquote>
+<blockquote>
+<p>实际上，中国的旧式家庭，对女人来说也是一条海船，而且永远也靠不了码头。你要是烦得不行，就只有跳海一途。这倒不是乱讲的，旧式女人对自杀这件事，似乎比较熟练。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>总之，是在不幸之中品来品去。这种想法我很难同意。我原是学理科的，学理科的不承认有牢不可破的囚笼，更不信有摆不脱的噩梦。人生唯一的不幸就是自己的无能。</p>
+</blockquote>
+</blockquote>
+<p>转自闲情偶记：<br>这句话的升级版:人的一切痛苦本质上都是对自己无能的愤怒。这句真的太经典了，每当我自己想发火的时候，默念此箴言3遍，愤怒立消，转头就去埋头苦读，不甘人下，厚实自己。</p>
+<blockquote>
+<blockquote>
+<p>人生唯一的不幸就是自己的无能。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>举例来说，对数学家来说，只要他能证明费尔马定理，就可以获得全球数学家的崇敬，自己也可以得到极大的快感，问题在于你证不出来。物理学家发明了常温核聚变的方法，也可马上体验幸福的感觉，但你也发明不出来。由此就得出这样的结论，要努力去做事，拼命地想问题，这才是自己的救星。</p>
+</blockquote>
+</blockquote>
+<p>◆ 从《黄金时代》谈小说艺术</p>
+<blockquote>
+<blockquote>
+<p>我们的生活有这么多的障碍，真他妈的有意思。这种逻辑就叫做黑色幽默。我觉得黑色幽默是我的气质，是天生的。</p>
+</blockquote>
+</blockquote>
+<p>◆ “行货感”与文化相对主义</p>
+<blockquote>
+<blockquote>
+<p>这是因为，人该是自己生活的主宰，不是别人手里的行货。假如连这一点都不懂，他就是行尸走肉，而行尸走肉是不配谈论科学的。</p>
+</blockquote>
+</blockquote>
+<p>◆ 摆脱童稚状态</p>
+<blockquote>
+<blockquote>
+<p>以前我们谈到国内对书刊、影视某些内容过于敏感时，总是归因于中外国情不同，社会制度不同，假如拿美国的三十年代和现在中国做个对比，就很容易发现新的线索。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>这种事情背后隐含着一个逻辑，就是我们国家的出版事业必须就低不就高。一本书能不能出，并不取决于它将有众多的有艺术鉴赏力或者有专业知识的读者，这本书应该对他们有益，而是取决于社会上存在着一些没有鉴赏力或没有专业知识的读者，这本书不能对他们有害。对我来说，书刊审查不是个性环境，而是个知识环境问题，对其他知识分子也是这样的。这一点是《性社会学》上没有提到的。</p>
+</blockquote>
+</blockquote>
+<p>◆ 有关同性恋的伦理问题</p>
+<blockquote>
+<blockquote>
+<p>我知道有些人生活的乐趣就是发掘别人道德上的毛病，然后盼着人家倒霉。谢天谢地，我不是这样的人。</p>
+</blockquote>
+</blockquote>
+<p>◆ 中国知识分子与中古遗风</p>
+<blockquote>
+<blockquote>
+<p>我们国家总以受过某种程度的教育为尺度来界定知识分子，外国人却不是这样想的。我在美国留学时，和老美交流过，他们认为工程师、牙医之类的人，只能算是专业人员，不算知识分子，知识分子应该是在大学或者研究部门供职，不坐班也不挣大钱的那些人。照这个标准，中国还算有些知识分子。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>中国知识分子关注社会的伦理道德，经常赤膊上阵，论说是非；而外国的知识分子则是以科学为基点，关注人类的未来，就是讨论道德问题，也是以理性为基础来讨论。</p>
+</blockquote>
+</blockquote>
+<p>转自BraveHearT：<br>说不用负责任的话，是很容易的事。一但说话要负责任了，沉默便是一件很容易的事。</p>
+<blockquote>
+<blockquote>
+<p>我不认为这是批判社会——这是批判人。知识分子的批判火力对两类人最为猛烈：一类是在校学生，尤其是中学生；另一类是踩着地雷断了腿的同类。这道理很明白——别人咱也惹不起。</p>
+</blockquote>
+</blockquote>
+<p>◆ 知识分子的不幸</p>
+<blockquote>
+<blockquote>
+<p>“知识分子最怕活在不理智的年代。”所谓不理智的年代，就是伽利略低头认罪，承认地球不转的年代，也是拉瓦锡上断头台的年代；是茨威格服毒自杀的年代，也是老舍跳进太平湖的年代。</p>
+</blockquote>
+</blockquote>
+<p>◆ 跳出手掌心</p>
+<blockquote>
+<blockquote>
+<p>上大学时，有一次我的数学教授在课堂上讲道：我现在所教的数学，你们也许一生都用不到，但我还要教，因为这些知识是好的，应该让你们知道。这位老师的胸襟之高远，使我终生佩服。我还要说，像这样的胸襟，在中国人文知识分子中间很少见到。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>先生写了一部《废都》，就如某位大嫂穿了旗袍出门，我们不但要说衣服不好看，还要想想她的动机是什么，是不是想要勾引谁。另外哪位先生或女士写了什么好书，称赞他的话必是功在世道人心，就如称赞哪位女士相夫教子、孝敬公婆是一样的。当然，假如我说现在中国对文艺只有这样一种标准，那就是恶毒的诽谤。杜拉斯的《情人》问世不久，一下就出了四种译本（包括台湾的译本），电影《辛德勒的名单》国内尚未见到，好评就不绝于耳。我们说，这些将是传世之作，那就不是用现世的标准、道德的标准来评判的。这种标准从来不用之于中国人。由此得到一个结论，那就是在文学艺术的领域，外国人可以做超越人类的事业，中国人却不能。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>总之，说到知识分子的职责，我认为还有一种传统可循：那就是面向未来，取得成就。古往今来的一切大智者无不是这样做的。这两种知识分子的形象可以这样分界，前一种一世的修为，是要做个如来佛，让别人永世跳不出他的手掌心；后一种是想在一生一世之中，只要能跳出别人的手掌心就满意了。我想说的就是，希望大家都做后一种知识分子，因为不管是谁的手掌心，都太小了。</p>
+</blockquote>
+</blockquote>
+<p>◆ 长虫·草帽·细高挑</p>
+<blockquote>
+<blockquote>
+<p>老太太买柿子，拣软的捏。但一枚柿子不能怪人家来捏你，要反省自己为什么被捏。对罗素先生的话也可以做适度的推广：人与人不独有知识的差异，还有能力的。</p>
+</blockquote>
+</blockquote>
+<p>◆ 《怀疑三部曲》序</p>
+<blockquote>
+<blockquote>
+<p>凡人都热爱智慧——因为我自己就热爱智慧，虽然这可能是因为我很低能</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>第三个假设是凡人都喜欢有趣。这是我一生不可动摇的信条，假如这世界上没有有趣的事我情愿不活。有趣是一个开放的空间，一直伸往未知的领域，无趣是个封闭的空间，其中的一切我们全部耳熟能详。《红拂夜奔》谈的是这一点。现在我承认有很多人是根本不喜欢有趣的。我所能希望的最好情况就是能够证明还有少数人也喜欢有趣。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>现在当然没有了君王，但是还有上级，还有意识形态。我丝毫不同意他的观点。我很爱我故世的父亲，但是不喜欢奉承他。我也很爱我哥哥，他的智能高我十倍，和他谈话是我所能得到的最大乐趣。但我要是去拍他的马屁，我们俩都会很痛苦。总而言之，我不能从奉承和顺从中得到乐趣。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>有些话仿佛永远讲不出口，仅仅是因为别人已经把反对它的话讲了出来。因此这些话就成了心底的暗流，形不成文字，也形不成话语，甚至不能形成有条理的思路——它就变成了郁结的混沌。而已经讲出的话则被人们一再重复，结构分明地架在混沌之上。</p>
+</blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>阅读笔记</tag>
+        <tag>节选</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于高中时期的文学课</title>
+    <url>/public/2023/04/06/2023-04-05-the-outsiders/</url>
+    <content><![CDATA[<blockquote>
+<p>我写的东西多半是写给自己看的，而我自己又对某些词汇和内容不愿说出口，因此刻意略过了，读起来像没有逻辑的句子。</p>
+</blockquote>
+<p>高三后半学期，因为种种原因（我并不想提起），文学课换了一个老师。我喜欢的老师很多，我不能说这位老师是我最认可的，但至少是我所见到过的，把生命力完全贡献给了教育事业的。我听到了很多实话，在一生中经历过的让人难以想象到的事情，那些仿佛与我不在同一个世界、几乎像是在新闻上看到还要怀疑真假的事情。<br>The outsiders本身是在我记忆里难以抹去的，每一个，经历。在七层花园录视频，在深夜的操场上演戏，突然收到ic的录取信，第一次在我几乎不怎么去的篮球场摸了飞盘。我甚至有时在想，是不是一个像电影里美国中学生的生活。<br>直到消息突如其来，我本是难以相信的。然后我大概知道了，所谓的stay gold，也并非那么纯粹。<br><em>当然我想说的并非到此就结束了，但我的确对于这个人没有形象倒塌似的落差感。这只是一个有趣的经历，当然如果非要说道理的话，就是凡事都没有那么简单。</em></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+        <tag>高中时的事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《小王子》</title>
+    <url>/public/2023/04/05/2023-04-05-xiaowangzi/</url>
+    <content><![CDATA[<p>我从来都只是听说《小王子》这本书的优秀，但其实在很小的时候就已经看过了绘本，却一直不理解为何它被吹捧得如此之高。后来的时候，也不断抱着再读一读或许就能明白了的心态，在不同年龄段都曾尝试过。<br>隐约记得在后来几次，觉得很害怕，感觉到空阔无垠，扭曲又颠倒混乱。有点像我的梦境。</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+        <tag>札记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一些正在准备自己写的东西</title>
+    <url>/public/2023/04/05/todos45/</url>
+    <content><![CDATA[<p>关于瀑布流实现相册功能，我一直没有找到一个可以适合我的方法或者是教程。<br>绝大部分都在实践中失败，即便后来我也尝试过不那么理想的模型，但依然不兼容，或者遇到各种未能解决的问题。<br>于是我决定自己书写一个瀑布流照片墙，或者是画廊功能。不得不说我的前端经验少得可怜，因此此项目持续的时间会比较长。<br>这里到底有什么问题啊为什么不显示字数</p>
+]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>testpost</title>
+    <url>/public/2023/04/05/testpost/</url>
+    <content><![CDATA[<p>hi so what’s going on<br>hi</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>sushi</title>
+    <url>/public/2023/04/03/2023-04-03-sushi/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="bf60a904526aa7b632da796e89ccee8a72fc79009f4c7c16d88da5fc76a53f99">4630436162ade97ba2718b7d0c4b3b633b7c401c3be54332060e1377be857de785c1b9a89ae21a0a17ba8b3f038dba0793b5210336d521b9c608f3088522900b78b20eb0ab82d085e1f443861c916fb9818198a65b72dc3e9944c0d478ccbd4761e5a6cdbc20133550d9beeb38d2c568abbadfb58fb47d8423ecf0e9f22b435e595094c49f5141f65d4145f5e709bef6abf06f0dedcdbda9c516b0b5b6d0466f2b9f63d6e89be33033220018bfbb5347d58bb0a7789bf7288103e42114d3121e</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">请联系站长获取密码 hipposcrewdrivers@gmail.com</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/public/lib/hbe.js"></script><link href="/public/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>时有时无的日子</title>
+    <url>/public/2023/04/03/his/</url>
+    <content><![CDATA[<h2 id="记近日发生的"><a href="#记近日发生的" class="headerlink" title="记近日发生的"></a>记近日发生的</h2>]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>chickenMeal</title>
+    <url>/public/2023/03/30/chickenMeal/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="2bb43a3efdf795a518100717970b502e8708f91b8f9ab1dba169ef07a9e76c30">ddf6052977664c2a19c7acdbb96e4dc87825b01981a2d785c403d72837e09a95312e719801a87c7e09423b93f05e71aa08373e98bfdeac0e4e32d185237653c14a4a00a3e4444c84dceae2f4a325bcad17d2b0ba6e16c053cbd6f8ad209ebd0b227987b2d3ead82fc3d381c7fcbf270cc1a0123eca55c2f704f345da05ffe0224408788042f8ed80c877984a7980c5ae71a6d2cd402cf50fc9cc4fd88f1499ba837d2e8d74f7bd3ced4a4725f95ae7259343ff730d71f5f9813f3dd9bb6808b63605a21adba4c5205f4a60c6614491637ec09fb2f6864c3d5072f586c629d09bb16a2773c1ce5b366fd80062d0e859d71db4b86fd0a790e3fe06ff361516aadce878868adf1c1f4b43a646117cbcb7911261005a8c7f87357fccb4327d3d68849ccbd5b2340f9d00efcd3ca871ad4c682773adb399b14c25a9483a0fb50fa8cf435c1b63970672be50a722c18b42892f0e283a4e5a8f7ed701d4a7d6f2cf1648793cdaf4f95b7351f8bc6bfbdaa818b5c4e0ac0da11f00c5d4ceb1fe5bc539bbe55da00f6b94692b9ba74f057d73b614ce6325db5e429ffaffeeda0c50e6578ae5593c7ffb69a0df855154aa10ea2a1caef061a3f4ab59577d5a9565780069e72d9ab114b3b96e22df58cb56da819513e5c36274125247ca6a18fdd3a333db7328f44e495a10ac0d6b03a24be456c59c79973d75d61dcf215d5d566328251b11dbfdbb5c3c28380d36062b632cf460ceef18a0a5d7081c6c223cb08416598a8c5ff04dc57702051d3ceba5e6987eb340f4257d2fd02c9a73302632b0086a92dc568805a0596384392e1fac8a7c0edf3ba74739bd7dfeab43857eeb280a6858020b3c95b458dfbd2c88bbba436b60f5ed3a50cda157bc26bbaddb9afe2be8735b3f9a9cde4ff2fd1dce49858d8301492260600c59fd92b9ebaa98644ac2670a63c67ae929e13049bba49467191e3a981bc9a8e5783e2a6857ea384d85f417865051505bca6f21f13e25a558795efa071fc47b37a5db9fe9bc56f08dac24c61c2e1439915eed6d858a63e6b5e30d89d1186b45d0dd39cfeeffaa627a0df7715015949a0c15765d8a03cc2a7155a5bfe6266abb93b0e00d62ed03b942b21c3fa80e2ae0165510190e17a901c5dc0636c12c0654094a9e3835afe95bfac4306d348c657745135c672471f376424ced4c9dfb5428ca34463ec9676c29f63872da2725</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">联系站长获取密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/public/lib/hbe.js"></script><link href="/public/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>碎</title>
+    <url>/public/2023/03/30/2023-3-30-%E6%B5%8B%E8%AF%95%E9%A1%B5/</url>
+    <content><![CDATA[<p>测试页</p>
+<p>测试</p>
+<p>test edit</p>
+]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>asdfadfasdfadcae</title>
+    <url>/public/2023/03/30/asdfadfasdfadcae/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>2023-3-30-testVSCODEterminal</title>
+    <url>/public/2023/03/30/2023-3-30-testVSCODEterminal/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>关于站点的未来规划</title>
+    <url>/public/2023/03/30/2023-3-3-writewhatever/</url>
+    <content><![CDATA[<h2 id="about-hippo-blog"><a href="#about-hippo-blog" class="headerlink" title="about hippo blog"></a>about hippo blog</h2>]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>碎碎念</title>
+    <url>/public/2023/03/29/2023-3-29-suisuinian/</url>
+    <content><![CDATA[<h2 id="建站暂时告一段落，随便写点什么东西"><a href="#建站暂时告一段落，随便写点什么东西" class="headerlink" title="建站暂时告一段落，随便写点什么东西"></a>建站暂时告一段落，随便写点什么东西</h2><p>这两天都在忙页面，写的文章几乎都是测试页，没有什么实质性的内容，想来因此也会导致一些结构上的缺失。所以与此同时要开始在博客里写内容了。当然，这个blog在谷歌里还搜不到，需要找个时间去上传一下。</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>tolkien category init</title>
+    <url>/public/2023/03/29/cate/</url>
+    <content><![CDATA[<h2 id="我们来尝试添加一张图片"><a href="#我们来尝试添加一张图片" class="headerlink" title="我们来尝试添加一张图片"></a>我们来尝试添加一张图片</h2><p><img src="/public/images/backgroundMountain.jpg"></p>
+<p>这次是jpg图片<br>可以的</p>
+]]></content>
+      <categories>
+        <category>tolkien</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于那些我在建站时踩的坑</title>
+    <url>/public/2023/03/29/ohhhbugs/</url>
+    <content><![CDATA[<h2 id="奇怪的bug出现了！"><a href="#奇怪的bug出现了！" class="headerlink" title="奇怪的bug出现了！"></a>奇怪的bug出现了！</h2><p>首先我要说，作为一个前端小白我对一切bug的解决方案都是Google寻找跟我有着同样遭遇的人，然后看大佬的解决办法再进行尝试。<br>显而易见，这个方法最大的问题就是别人的版本包括环境跟你的不一样，因此很多时候会出现你在进行同样操作之后，整个网页挂掉，或者出现奇怪的css。甚至，跑遍所有教程之后发现没有一个能用的。<br>❗️❗️❗️<br>这不是一个bug解决贴，而是吐槽贴。我来列举一下我经历的神奇事件</p>
+<h3 id="bug从这里开始"><a href="#bug从这里开始" class="headerlink" title="bug从这里开始"></a>bug从这里开始</h3><ol>
+<li><p>在部署到虚拟主机后，我的网页始终呈现“半更新”状态，也就是文章更新了但是css完全没变。我非常迷惑，因为在localhost跑是完全没问题的，最后在一个大佬的回答中发现是浏览器缓存的问题。怀着随便一试肯定不能解决的心态，我删除了最近七天的浏览器缓存————它好了。 </p>
+</li>
+<li><p>关于blog的背景，hexo的nexT主题最初是纯白色，我又觉得太素，看了别人的博客十分羡慕，因此决定增加图片。</p>
+<ul>
+<li>首先是url的问题，背景图片本身的url我根据大家的教程设置成images&#x2F;xxx，但是！！它一直显示找不到图片。我非常迷惑，毕竟所有教程都是这么写的。于是我凭着不试白不试的心情随便Google了一张图把网址贴上去了，好，它能用了。于是我坚信问题出在url上。痛苦又绝望的我打开了public文件夹，鬼使神差在images前面加上了public————但是为什么它好了呢，我，完全，不清楚。</li>
+<li>第二个问题就是背景</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>tech</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ReadingStart</title>
+    <url>/public/2023/03/25/ReadingStart/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b98dcb4fb1e92518bf7d79d5689da3b10c993db8b26a66cf1fe3ebf507f1fe74">4630436162ade97ba2718b7d0c4b3b6351ade09e539dfebeb5402828e29e64b08c0beb0e5eb13ff7e1915adef76dd3f651492b8bb69eef42a0bdbd4e894be0d051af6f0faf8a565debc7d862689001966d91e9f943859a2600c4a750b4fb3cb5fc87e3502ec6cbd54b9889494224141e2e65d420e50e664a2ee162c1005454b6828da4fff396d7cb0b08afc64af31686e48ce72feecbe639bb76c7471373df9effaaa11d3d8c02e591b12a821f669a8d20f80a9881f1872f52a359ac9ef0c8c3b3d15b70aaa2ec343a1af6893f134bff85d70f2715710aafde158fef36b3e35e7e8ac35de4cca35e68fb7216c2c6306d2b4dc5d4d25f941d88be1ad3ce08289b3c775d8531175d47e5fdf13a0e68591d55ad68387da24c0726055da5967f4f55467b9faf356de1d314ee233d7359cc840771ade72b3d8198bd6e2cfc209e3b51ec33ab2f26b2e26ee3dc1692f66c7fedc926b14a082f092ee8cce4922089a405323ea8ca0b4f7a6f913e6a9effb25d94555b3830260b65d328ffc34418565089720c83ceb44e7031f2c15ef8610b3a2ab30ae26677d5d8994de28474656ec8da725c62a911b3d9a7df9065972c200198d66542ad71a8aed66bc8b567e3c0f67f605ad78eb01f1b0edd04c5be666b5ca4d68fffd552c74433efadae57f587008d738402be85cf0283886e411c5c7aab69f03c75fd75a739564f3ac6e9e316a6dc075bd95000784833b303c557f06a2306047b8d563a7e7c836b280af4d8e3ff22182222960f80446e89a7bb4b5e1baf261723dfad53e9387ab5e5b6913112aedffdd08510703a99ab7859d41664c02610209b364dc7ec7c1e513865bdb9300df1a6ad649971e0bce6058125c0e8ce83c8d0bfb41859aebf4aeae6806d19409c2527e96b9394fe890e62d9ea45658129491a601c7309265d84891791331f8dcdae11812ad450e6e9361bba4e0f15b834c8ce2b2aabb675febe6e65a201b969124052f5ec3bb0bc0effcc2288e4950ae571509a492c4bd33919dce5059c375f45dd44b128d0e0ec83a5cc026a8e7958a8ac938f7910a2a336cb39819d84758e9586</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">联系站长获取密码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/public/lib/hbe.js"></script><link href="/public/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+  </entry>
+  <entry>
+    <title>myaasdfasdfa</title>
+    <url>/public/2023/03/24/myaasdfasdfa/</url>
+    <content><![CDATA[<p>asdfjkhdlkjha</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Markdown写作的入门常用语法</title>
+    <url>/public/2023/03/22/markDownPractice/</url>
+    <content><![CDATA[<h2 id="初识Markdown语言🌟"><a href="#初识Markdown语言🌟" class="headerlink" title="初识Markdown语言🌟"></a>初识Markdown语言🌟</h2><blockquote>
+<p>前言：</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+        <tag>建站</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>thisnewBlog</title>
+    <url>/public/2023/03/20/hiasdfa/</url>
+    <content><![CDATA[<p>make something here</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>thisnewBlog</title>
+    <url>/public/2023/03/20/thisnewBlog/</url>
+    <content><![CDATA[<h3 id="this-is-the-new-Blog’s-title"><a href="#this-is-the-new-Blog’s-title" class="headerlink" title="this is the new Blog’s title"></a>this is the new Blog’s title</h3><p>let’s try different mode<br>so what about the code <code>hi code</code><br>and there are <em>italic</em><br>also <strong>blod</strong><br>hahahh end!<br>what about list?</p>
+<ol>
+<li>asdfad</li>
+<li>asdfadf<br> *sfasd<br>*asdf</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/public/2023/03/20/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
