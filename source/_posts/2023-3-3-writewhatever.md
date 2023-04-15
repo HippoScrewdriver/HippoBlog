@@ -6,4 +6,4 @@ categories:
     - life
 ---
 
-## about hippo blug
+## about hippo blog
