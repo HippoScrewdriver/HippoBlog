@@ -1,5 +1,5 @@
 ---
-title: 2023-04-07-bookforlinux
+title: linux相关书籍
 date: 2023-04-07 01:15:28
 tags:
     - linux

@@ -6,6 +6,8 @@ tags:
     - 高中时的事
 categories:
     - life
+message: 此文章为生活随想，不对外开放，获取密码请联系站长。
+password: hipposcrewdriverLife78!
 ---
 > 我写的东西多半是写给自己看的，而我自己又对某些词汇和内容不愿说出口，因此刻意略过了，读起来像没有逻辑的句子。
 

@@ -6,7 +6,6 @@ tags:
    - 学习
 categories:
 - tech
-top: true
 ---
 
 ## 我是如何开始的❗️❓
